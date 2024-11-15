@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -63,6 +64,9 @@ nav > img{
         justify-content: center;
         align-items: center;
         font-size: 24px;
+        background-color: #2e2d2d;
+        padding: 1rem;
+        border-radius: 15px;
     }
 }
 
@@ -148,8 +152,123 @@ nav > img{
 
 /*DIVISON-2*/
 .DIVISION-2{
+    margin-top: 1rem;
+    padding: 3.5rem;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(to top right, black, #151589b7, #8f2638e9,#151589b7);
+    gap: 3.2rem;
+    text-align: center;
+}
+.DIVISION-2 > p{
+    font-size: 18px;
+    color: #828FFF;
+    font-family: 'Roboto','Poppins','Sans-serif';
+}
+.DIVISION-2 > .companies{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 3rem;
+}
+@media screen and (max-width:920px){
+    .DIVISION-2 > .companies{
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 3rem;
+    }
+}
+@media screen and (max-width:750px){
+    .DIVISION-2 > .companies{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(3,1fr);
+        gap: 3rem;
+    }
+}
+@media screen and (max-width: 560px){
+    .DIVISION-2 > .companies{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(4,1fr);
+        gap: 3rem;
+    }
+}
+@media screen and (max-width: 400px){
+    .DIVISION-2 > .companies{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(10,1fr);
+        gap: 3rem;
+    }
+}
+
+
+/*DIVISION 3*/
+.DIVISION-3{
+    background-color: #1C1D1F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 4rem;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 1rem;
+}
+.title1{
+    font-weight: bold;
+    font-size: 40px;
+}
+.title2{
+    color: #bababa;
+    font-size: 25px;
+}
+.cards{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    gap: 2rem;
+}
+.C{
+    border: none;
+    border-radius: 12px;
+    padding: 2.2rem;
+    width: 304px;
+    background-color: #27272A;
+}
+.c1{
+    margin-top: 0.5rem;
+    font-size: 20px;
+}
+.c2{
+    font-size: 17px;
+    color: #bababa;
+    margin-top: 1rem;
+}
+@media screen and (max-width: 1030px){
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .title1{
+        font-size: 25px;
+    }
+    .title2{
+        font-size: 16px;
+    }
+}
+@media screen and (max-width: 680px){
+    .cards{
+        grid-template-columns: repeat(1,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
 }
