@@ -1,64 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-*{
+
+* {
     padding: 0;
     margin: 0;
     text-decoration: none;
     box-sizing: border-box;
-    font-family: 'Poppins','sans-serif';
+    font-family: 'Poppins', 'sans-serif';
 }
-Html, body {
-    Height:100vh;
-    Width:100vw;
+
+Html,
+body {
+    Height: 100vh;
+    Width: 100vw;
     Overflow-x: hidden;
     background-color: black;
     color: white;
-    }
+}
+
 /*NAVIGATION - BAR */
-nav{
+nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     padding: 2rem;
 }
-nav > img{
+
+nav>img {
     width: 8rem;
 }
-.navigation{
+
+.navigation {
     display: flex;
     column-gap: 2.3rem;
     justify-content: center;
     align-items: center;
 }
-.navigation > a{
+
+.navigation>a {
     color: white;
     font-size: 100%;
 }
-.nav-buttons{
+
+.nav-buttons {
     display: flex;
     flex-direction: row;
     column-gap: 1.5rem;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
 }
-#first-btn{
+
+#first-btn {
     color: #5E6AD2;
 }
-#sec-btn > button{
+
+#sec-btn>button {
     background-color: #525ec6;
     border: none;
     color: white;
     padding: 0.5rem 1.5rem;
     border-radius: 7px;
 }
-#hamburger{
+
+#hamburger {
     display: none;
 }
-@media screen and (max-width: 1167px){
-    .navigation, .nav-buttons > a{
+
+@media screen and (max-width: 1167px) {
+
+    .navigation,
+    .nav-buttons>a {
         display: none;
     }
-    #hamburger{
+
+    #hamburger {
         display: inline-flex;
         flex-direction: row;
         justify-content: center;
@@ -72,13 +87,14 @@ nav > img{
 
 
 /*DIVISON-1*/
-.DIVISION-1{
+.DIVISION-1 {
     margin-top: 5rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.card{
+
+.card {
     width: 40%;
     display: flex;
     flex-direction: column;
@@ -87,7 +103,8 @@ nav > img{
     align-items: center;
     text-align: center;
 }
-.version > button{
+
+.version>button {
     display: flex;
     flex-direction: row;
     column-gap: 1rem;
@@ -98,25 +115,30 @@ nav > img{
     padding: 1rem;
     font-size: 15px;
 }
-.version > button > #bar{
+
+.version>button>#bar {
     color: #413a3a;
 }
-.block{
-    display:flex ;
+
+.block {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 2rem;
 }
-.block > .p1{
+
+.block>.p1 {
     font-weight: bold;
     font-size: 59px;
 }
-.block > .p2{
+
+.block>.p2 {
     color: #bababa;
     font-size: 20px;
 }
-.block > button{
+
+.block>button {
     padding: 1rem 1.8rem;
     border-radius: 5px;
     border: none;
@@ -125,33 +147,39 @@ nav > img{
     color: white;
     width: 40%;
 }
-@media screen and (max-width: 960px){
-    .card{
+
+@media screen and (max-width: 960px) {
+    .card {
         width: 50%;
     }
-    .block > .p1{
+
+    .block>.p1 {
         font-size: 40px;
     }
-    .block > .p2{
+
+    .block>.p2 {
         font-size: 18px;
     }
 }
-@media screen and (max-width: 650px){
-    .card{
+
+@media screen and (max-width: 650px) {
+    .card {
         width: 100%;
         padding: 1.5rem;
     }
-    .block > .p1{
+
+    .block>.p1 {
         font-size: 30px;
     }
-    .block > .p2{
+
+    .block>.p2 {
         font-size: 15px;
     }
 }
 
 
 /*DIVISON-2*/
-.DIVISION-2{
+.DIVISION-2 {
     margin-top: 1rem;
     padding: 3.5rem;
     display: flex;
@@ -161,53 +189,59 @@ nav > img{
     gap: 3.2rem;
     text-align: center;
 }
-.DIVISION-2 > p{
+
+.DIVISION-2>p {
     font-size: 18px;
     color: #828FFF;
-    font-family: 'Roboto','Poppins','Sans-serif';
+    font-family: 'Roboto', 'Poppins', 'Sans-serif';
 }
-.DIVISION-2 > .companies{
+
+.DIVISION-2>.companies {
     display: grid;
-    grid-template-columns: repeat(5,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 3rem;
 }
-@media screen and (max-width:920px){
-    .DIVISION-2 > .companies{
+
+@media screen and (max-width:920px) {
+    .DIVISION-2>.companies {
         display: grid;
-        grid-template-columns: repeat(4,1fr);
-        grid-template-rows: repeat(2,1fr);
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
         gap: 3rem;
     }
 }
-@media screen and (max-width:750px){
-    .DIVISION-2 > .companies{
+
+@media screen and (max-width:750px) {
+    .DIVISION-2>.companies {
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: repeat(3,1fr);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         gap: 3rem;
     }
 }
-@media screen and (max-width: 560px){
-    .DIVISION-2 > .companies{
+
+@media screen and (max-width: 560px) {
+    .DIVISION-2>.companies {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(4,1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         gap: 3rem;
     }
 }
-@media screen and (max-width: 400px){
-    .DIVISION-2 > .companies{
+
+@media screen and (max-width: 400px) {
+    .DIVISION-2>.companies {
         display: grid;
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(10,1fr);
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(10, 1fr);
         gap: 3rem;
     }
 }
 
 
 /*DIVISION 3*/
-.DIVISION-3{
+.DIVISION-3 {
     background-color: #1C1D1F;
     display: flex;
     flex-direction: column;
@@ -215,7 +249,8 @@ nav > img{
     align-items: center;
     padding: 4rem;
 }
-.title{
+
+.title {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -223,52 +258,148 @@ nav > img{
     text-align: center;
     gap: 1rem;
 }
-.title1{
+
+.title1 {
     font-weight: bold;
     font-size: 40px;
 }
-.title2{
+
+.title2 {
     color: #bababa;
     font-size: 25px;
 }
-.cards{
+
+.cards {
     margin-top: 3rem;
     display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     gap: 2rem;
 }
-.C{
+
+.C {
     border: none;
     border-radius: 12px;
     padding: 2.2rem;
     width: 304px;
     background-color: #27272A;
 }
-.c1{
+
+.c1 {
     margin-top: 0.5rem;
     font-size: 20px;
 }
-.c2{
+
+.c2 {
     font-size: 17px;
     color: #bababa;
     margin-top: 1rem;
 }
-@media screen and (max-width: 1030px){
-    .cards{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(3,1fr);
+
+@media screen and (max-width: 1030px) {
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
     }
-    .title1{
+
+    .title1 {
         font-size: 25px;
     }
-    .title2{
+
+    .title2 {
         font-size: 16px;
     }
 }
-@media screen and (max-width: 680px){
-    .cards{
-        grid-template-columns: repeat(1,1fr);
-        grid-template-rows: repeat(6,1fr);
+
+@media screen and (max-width: 680px) {
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+    }
+}
+
+
+/*DIVISION 4*/
+.DIVISION-4 {
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.div4-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    width: 40%;
+    padding-left: 3rem;
+    justify-content: center;
+    text-align: start;
+}
+
+.left-title {
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.left-1,
+.left-2 {
+    color: #bababa;
+}
+
+.left-1>span,
+.left-2>span {
+    font-weight: bold;
+    color: white;
+}
+
+.div4-right>img {
+    height: 85%;
+    width: 100%;
+}
+
+@media screen and (max-width: 1230px) {
+    .div4-right>img {
+        width: 85%;
+        float: right;
+    }
+
+    .left-title {
+        font-size: 25px;
+    }
+
+    .left-1,
+    .left-2 {
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .left-title {
+        font-size: 18px;
+    }
+
+    .left-1,
+    .left-2 {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .DIVISION-4 {
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .div4-left {
+        padding: 1rem;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .left-1, .left-2{
+        text-align: start;
     }
 }
