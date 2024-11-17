@@ -438,6 +438,20 @@ nav>img {
 @media screen and (max-width: 1200px){
     .top{width: 100%};
 }
+@media screen and (max-width: 700px){
+    .top{width: 100%};
+    .top > .top1{
+        font-size: 30px;
+    }
+    .top > .top2{
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 550px){
+    .top > img{
+        width: 30%;
+    }
+}
 
 /*DIVISION 6*/
 .DIVISION-6 {
@@ -688,12 +702,25 @@ nav>img {
         width: 80%;
     }
 }
+@media screen and (max-width: 750px){
+    .row-1{
+        width: 100%;
+    }
+}
 @media screen and (max-width: 1200px){
     .wrap2{
         width: 60%;
     }
     .base{
         width: 50%;
+    }
+}
+@media screen and (max-width: 450px){
+    .row-1 > .para-title{
+        font-size: 30px;
+    }
+    .row-2 > .para-content{
+        font-size: 15px;
     }
 }
 @media screen and (max-width: 950px){
@@ -710,6 +737,25 @@ nav>img {
     .DIVISION-8{
         justify-content: center;
         align-items: center;
+    }
+}
+@media screen and (max-width: 530px){
+    .wrap1{
+        padding: 2rem;
+    }
+}
+@media screen and (max-width: 425px){
+    .wrap1 > .head{
+        font-size: 16px;
+    }
+    .wrap1 > .tail{
+        font-size: 14px;
+    }
+    .base{
+        flex-direction: column;
+    }
+    .base-p1, .base-p2{
+        font-size: 12.5px;
     }
 }
 
@@ -757,7 +803,7 @@ nav>img {
     margin: 2rem 0rem;
 }
 .RIGHT > .part-1, .part-2, .final{
-    font-size: 17px;
+    font-size: 15.5px;
     margin-bottom: 1.5rem;
 }
 .RIGHT > .part-1 > span{
@@ -787,6 +833,11 @@ nav>img {
     .RIGHT{
         padding: 0rem 4rem;
         width: 100%;
+    }
+}
+@media screen and (max-width: 525px){
+    .DIVISION-9{
+        gap: 4rem;
     }
 }
 
@@ -827,4 +878,29 @@ nav>img {
     color: white;
     width: 100%;
     font-size: 17px;
+}
+@media screen and (max-width: 745px){
+    .wrap-last{
+        width: 100%;
+    }
+    .wrap-last > .f1{
+        font-size: 45px;
+    }
+    .wrap-last > .f2{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 520px){
+    .wrap-last{
+        width: 100%;
+    }
+    .wrap-last > .f1{
+        font-size: 35px;
+    }
+    .wrap-last > .f2{
+        font-size: 18px;
+    }
+    .DIVISION-10 > img{
+        width: 21%;
+    }
 }
