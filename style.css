@@ -92,8 +92,12 @@ nav>img {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(Image-Assets/Wonderland_.gif);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    overflow-x : hidden;
 }
-
 .card {
     width: 40%;
     display: flex;
