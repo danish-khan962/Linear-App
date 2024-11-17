@@ -179,6 +179,14 @@ nav>img {
     .block>.p2 {
         font-size: 15px;
     }
+    .block>button{
+        width: 70%;
+    }
+}
+@media screen and (max-width: 1200px){
+    .block>button{
+        width: 70%;
+    }
 }
 
 
