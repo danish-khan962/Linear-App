@@ -233,9 +233,12 @@ nav>img {
 @media screen and (max-width: 400px) {
     .DIVISION-2>.companies {
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(10, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5, 1fr);
         gap: 3rem;
+    }
+    .DIVISION-2 > .companies > img{
+        width: 90%;
     }
 }
 
@@ -310,12 +313,15 @@ nav>img {
         font-size: 16px;
     }
 }
-
 @media screen and (max-width: 680px) {
     .cards {
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(6, 1fr);
     }
+}
+@media screen and (max-width: 480px){
+    .c1{font-size: 17px};
+    .c2{font-size: 14px};
 }
 
 
@@ -427,10 +433,7 @@ nav>img {
     color: #bababa;
 }
 .bottom{
-    background: linear-gradient(to top right, #FF6682,#CE3D93,#9909C3,#8322FF,#4BB2FD,#70DCFE,#AAC1A6,#FF9D66,#FF9869,#FF8672);
-    width: 100%;
     border: none;
-    border-radius: 25px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -450,6 +453,11 @@ nav>img {
 @media screen and (max-width: 550px){
     .top > img{
         width: 30%;
+    }
+}
+@media screen and (max-width: 600px){
+    .bottom{
+        width: 100%;
     }
 }
 
@@ -840,7 +848,19 @@ nav>img {
         gap: 4rem;
     }
 }
-
+@media screen and (max-width: 490px){
+    .LEFT > img{
+        width: 80%;
+    }
+    .LEFT{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mid{
+        gap: 2rem;
+    }
+}
 
 /*DIVISION 10*/
 .DIVISION-10{
